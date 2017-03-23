@@ -58,9 +58,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*Movement*/
 /*Colors*/
 /***********STYLES***********/
-/* body { */
-  /* background-color: #d4e7ba; */
-/* } */
+body {
+  background-color: #d4e7ba;
+}
 
 .ele-container {
   /* background: -webkit-linear-gradient(top, rgba(0, 141, 210, 1) 0%, transparent 100%); */
