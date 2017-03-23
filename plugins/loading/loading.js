@@ -1,4 +1,4 @@
-﻿var _LoadingHtml = '<div id="loading" class="ele-container">'+
+﻿var _LoadingHtml = '<div id="loading" class="ele-box"><div class="ele-container">'+
 				'<div class="ele-wrapper">'+
 	'<div class="ele-tail"></div>'+
 	'<div class="ele-body">'+
@@ -24,7 +24,7 @@
 	  '<div class="ele-foot"></div>'+
 	'</div>'+
   '</div>'+
-'</div>';
+'</div></div>';
 
 //呈现loading效果
 //$(document.body).append(_LoadingHtml);
