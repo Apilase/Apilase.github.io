@@ -62,14 +62,15 @@ body {
   background-color: #d4e7ba;
 }
 
-/*.ele-container {
-  background: -webkit-linear-gradient(top, rgba(0, 141, 210, 0.63) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 141, 210, 0.63) 0%, transparent 100%);
-  height: 500px;
+.ele-container {
+  /* background: -webkit-linear-gradient(top, rgba(0, 141, 210, 1) 0%, transparent 100%); */
+  /* background: linear-gradient(to bottom, rgba(0, 141, 210, 1) 0%, transparent 100%); */
+  background-color: #d4e7ba;
+  height: 100%;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   width: 100%;
-}*/
+}
 
 .ele-wrapper {
   -webkit-animation: ele-movement 1s infinite linear;
