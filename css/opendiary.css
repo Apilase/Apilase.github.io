@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-size:12px; background:url(../images/bg.jpg) no-repeat left top fixed; /*背景图片不平铺，左对齐，上对齐，固定*/}
+*{ margin:0; padding:0; list-style:none; text-decoration:none; font-family:"微软雅黑"; color:#756F71;}
+img{ border:0; display:block;}
+
+#head{ width:700px; margin:0 auto;/*水平方向距中*/ padding:15px; overflow:hidden;/*隐藏浮动，宽高自适应*/}
+#head #logo{ float:left;}
+#head #title{ float:right; line-height:70px; font-size:20px; color:#777; font-weight:bold;}
+.list{ width:700px; padding-top:30px; background:url(../images/line_bg.jpg) repeat-y 30px 0; margin:0 auto/*水平方向距中*/;}
+.list .imgcon{ width:70px; float:left;}
+.list .imgcon img { border-radius:35px;}
+.list .txtcon{ width:570px; background:#FFF; float:left; filter:Alpha(opacity=70); -moz-opacity:0.7; opacity:0.7;/*背景透明*/border-radius:7px;  line-height:25px; padding:20px; margin-left:15px; position:relative;/*相对定位*/}
+.list .txtcon img{ position:absolute;/*绝对定位*/ top:30px; left:-13px}
