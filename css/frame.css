@@ -1,3 +1,149 @@
 body{
 	margin: 0 0 0
 }
+head{
+	position:relative;
+	z-index:1000;
+}
+.head-ul{
+	position:absolute;
+	z-index:1002;
+	width:100%;
+	min-width:500px;
+	height:32px;
+	padding-top:1px;
+	top:120px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+.head-ul li{
+	width:150px;
+	float:left;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	font-family:'Microsoft YaHei';
+	height:30px;
+	line-height:30px;
+	cursor:pointer;
+}
+.head-ul li:first-child{
+	width:45px;
+}
+.head-ul li:hover{
+	font-size:18px;
+	font-family:Times New Roman,Times,serif;
+	-webkit-box-shadow:1px 1px 1px RGBA(0,0,0,0.7);
+	-moz-box-shadow:1px 1px 1px RGBA(0,0,0,0.7);
+	box-shadow:1px 1px 1px RGBA(0,0,0,0.7);
+	border-radius:5px;
+}
+.head-ul li img{
+	width:24px;
+	margin-top:5px;
+}
+
+.head-animation{
+	width:100%;
+	height:150px;
+	background-color: #d4e7ba;
+	background-image: url('');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.main{
+	position:relative;
+	width:100%;
+	margin-top:5px;
+	overflow:hidden;
+}
+.left{
+	width:200px;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:-200px;
+	z-index:1001;
+	background-color:rgba(255,255,255,0.7);
+	-webkit-box-shadow:0px 1px 5px RGBA(0,0,0,0.7);
+	-moz-box-shadow:0px 1px 5px RGBA(0,0,0,0.7);
+	box-shadow:0px 1px 5px RGBA(0,0,0,0.7);
+	text-align:center;
+}
+.right{
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	background:#fff;
+	text-align:center;
+}
+
+.pri-right-animation{
+	animation:leftmove 1s ease 1 forwards;
+	-webkit-animation:leftmove 1s ease 1 forwards;
+	animation-fill-mode:forwards;
+}
+.pri-left-animation{
+	animation:leftmoveback 1s ease 1 forwards;
+	-webkit-animation:leftmoveback 1s ease 1 forwards;
+	animation-fill-mode:forwards;
+}
+
+.ctxt-right-animation{
+	animation:rightmove 1s ease 1 forwards;
+	-webkit-animation:rightmove 1s ease 1 forwards;
+	animation-fill-mode:forwards;
+}
+
+.ctxt-left-animation{
+	animation:rightmoveback 1s ease 1 forwards;
+	-webkit-animation:rightmoveback 1s ease 1 forwards;
+	animation-fill-mode:forwards;
+}
+
+@keyframes leftmove
+{
+	from {left:-200px;}
+	to {left:0px;}
+}
+@-webkit-keyframes leftmove{
+	from {left:-200px;}
+	to {left:0px;}
+}
+
+@keyframes leftmoveback
+{
+	from {left:0px;}
+	to {left:-200px;}
+}
+@-webkit-keyframes leftmoveback{
+	from {left:0px;}
+	to {left:-200px;}
+}
+
+@keyframes rightmove
+{
+	from {left:0px;}
+	to {left:200px;}
+}
+@-webkit-keyframes rightmove
+{
+	from {left:0px;}
+	to {left:200px;}
+}
+
+
+@keyframes rightmoveback
+{
+	from {left:200px;}
+	to {left:0px;}
+}
+@-webkit-keyframes rightmoveback
+{
+	from {left:200px;}
+	to {left:0px;}
+}
