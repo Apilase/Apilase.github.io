@@ -36,7 +36,7 @@ logic.init = function(){
 $("#content").html(_LoadingHtml);
 }
 
-logic.slideToggle = function(){
+logic.infoSlideToggle = function(){
 	if(logic.animationFlag==0)
 	{
 		$("#leftMenu").removeClass("pri-left-animation");
